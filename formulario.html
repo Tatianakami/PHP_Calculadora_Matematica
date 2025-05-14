@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="content-wrapper">
+        <main>
+            <h1><i class="fas fa-calculator"></i> Calcular Antecessor e Sucessor</h1>
+            <form action="resposta.php" method="get">
+                <label for="num"><i class="fas fa-number"></i> Digite um número:</label>
+                <input type="number" name="num" id="num" required placeholder="Ex: 10">
+                
+                <div class="opcoes">
+                    <label><i class="fas fa-plus-circle"></i> Operações adicionais:</label>
+                    <div class="opcoes-container">
+                        <label class="opcao">
+                            <input type="checkbox" id="dobro" name="operacoes[]" value="dobro">
+                            <span>Dobro</span>
+                        </label>
+                        
+                        <label class="opcao">
+                            <input type="checkbox" id="triplo" name="operacoes[]" value="triplo">
+                            <span>Triplo</span>
+                        </label>
+                        
+                        <label class="opcao">
+                            <input type="checkbox" id="quadrado" name="operacoes[]" value="quadrado">
+                            <span>Quadrado</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="botoes">
+                    <button type="submit" class="botao calcular">
+                        <i class="fas fa-calculator"></i> Calcular
+                    </button>
+                    <button type="reset" class="botao limpar">
+                        <i class="fas fa-eraser"></i> Limpar
+                    </button>
+                </div>
+            </form>
+        </main>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 - Todos os direitos reservados</p>
+            <p>Desenvolvido por Tatiana Kami</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+
+    
+    
+</body>
+</html>
