@@ -66,7 +66,8 @@ Screenshots
 Adicione uma imagem ou captura de tela do seu projeto aqui:
 
 
-![Nome da imagem](assets/calculadora.png)
+
+![Screenshot do Projeto](assets/aleatorios.png) 
 
 Instalação e Execução Local
 Pré-requisitos
